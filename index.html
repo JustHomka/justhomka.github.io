@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustHomka's GitHub Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JustHomka</h1>
+            <p>Minecraft plugin and web developer</p>
+        </header>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I am JustHomka. Welcome to my GitHub profile. Here you can find some of my projects and repositories. Feel free to explore and contribute!</p>
+        </section>
+        <section>
+            <h2>Repositories</h2>
+            <div class="tag-selector">
+                <button class="tag-button" onclick="filterByTag('all')">All</button>
+                <button class="tag-button" onclick="filterByTag('Javat')">Java</button>
+                <button class="tag-button" onclick="filterByTag('Python')">Python</button>
+                <button class="tag-button" onclick="filterByTag('HTML5')">HTML5</button>
+            </div>
+            <ul class="repository-list">
+                <li data-tags="Java">
+                    <a href="https://github.com/JustHomka/FlipSide-TransportingBarrels" target="_blank">Java | FlipSide-TransportingBarrels</a>
+                    <p>FlipSide Minecraft server plugin for retaining items when you breake barrel</p>
+                </li>
+                <li data-tags="HTML5">
+                    <a href="https://github.com/JustHomka/justhomka.github.io" target="_blank">HTML5 | justhomka.github.io</a>
+                    <p>This website</p>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <p>My GitHub: @JustHomka</p>
+        </footer>
+    </div>
+
+    <script>
+        function filterByTag(tag) {
+            const repositoryItems = document.querySelectorAll('.repository-list li');
+            repositoryItems.forEach(item => {
+                if (tag === 'all' || item.dataset.tags.includes(tag)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

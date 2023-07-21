@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    background-color: #222;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+section {
+    padding: 1rem;
+}
+
+footer {
+    background-color: #222;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* repo links */
+.repository-list li {
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.repository-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.repository-list a:hover {
+    text-decoration: underline;
+}
+
+.repository-list li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #012773;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* repo descriptions */
+.repository-list p {
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+/* tags buttons */
+.tag-selector {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.tag-button {
+    margin-right: 1rem;
+    background-color: #012773;
+    border: none;
+    color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.tag-button:hover {
+    background-color: #003b94;
+}
