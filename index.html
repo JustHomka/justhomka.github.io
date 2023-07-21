@@ -14,6 +14,7 @@
         </header>
         <nav>
             <button class="nav-buttons" onclick="redirecttohome()">Home</button>
+            <button class="nav-buttons" onclick="redirecttoapps()">Web apps</button>
         </nav>
         <section>
             <h2>👋Hi there</h2>
@@ -26,6 +27,7 @@
                 <button class="tag-button" onclick="filterByTag('Java')">Java</button>
                 <button class="tag-button" onclick="filterByTag('Python')">Python</button>
                 <button class="tag-button" onclick="filterByTag('HTML5')">HTML5</button>
+                <button class="tag-button" onclick="filterByTag('Other')">Other</button>
             </div>
             <ul class="repository-list">
                 <li data-tags="Java">
@@ -36,9 +38,9 @@
                     <a href="https://github.com/JustHomka/justhomka.github.io" target="_blank">HTML5 | justhomka.github.io</a>
                     <p>This website ; Written on HTML, CSS and JavaScript</p>
                 </li>
-                <li data-tags="HTML5">
+                <li data-tags="Other">
                     <a href="https://github.com/JustHomka/webapps" target="_blank">HTML5 | webapps</a>
-                    <p>Webapps and webapps page for this website</p>
+                    <p>Webapps written on different supported languages by myself or comunity and webapps page for this website</p>
                 </li>
             </ul>
         </section>
@@ -60,6 +62,9 @@
         }
         function redirecttohome() {
             window.location.href = "https://justhomka.github.io/"
+        }
+        function redirecttoapps() {
+            window.location.href = "https://justhomka.github.io/webapps"
         }
     </script>
 </body>
