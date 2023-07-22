@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustHomka's website | Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JustHomka</h1>
+            <p>Minecraft plugin and web developer</p>
+        </header>
+        <nav>
+            <button class="nav-buttons" onclick="redirecttohome()">Home</button>
+            <button class="nav-buttons" onclick="redirecttoapps()">Web apps</button>
+            <button class="nav-buttons" onclick="redirecttogames()">Games</button>
+        </nav>
+        <section>
+            <h2>🎮Games</h2>
+            <p>Welcome to page with my games</p>
+        </section>
+        <footer>
+            <p>My GitHub: @JustHomka</p>
+        </footer>
+    </div>
+
+    <script>
+        function filterByTag(tag) {
+            const repositoryItems = document.querySelectorAll('.repository-list li');
+            repositoryItems.forEach(item => {
+                if (tag === 'all' || item.dataset.tags.includes(tag)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        function redirecttohome() {
+            window.location.href = "https://justhomka.github.io/"
+        }
+        function redirecttoapps() {
+            window.location.href = "https://justhomka.github.io/webapps"
+        }
+        function redirecttogames() {
+            window.location.href = "games.html";
+        }
+    </script>
+</body>
+</html>

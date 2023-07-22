@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JustHomka's website</title>
+    <title>JustHomka's website | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +15,7 @@
         <nav>
             <button class="nav-buttons" onclick="redirecttohome()">Home</button>
             <button class="nav-buttons" onclick="redirecttoapps()">Web apps</button>
+            <button class="nav-buttons" onclick="redirecttogames()">Games</button>
         </nav>
         <section>
             <h2>👋Hi there</h2>
@@ -65,6 +66,9 @@
         }
         function redirecttoapps() {
             window.location.href = "https://justhomka.github.io/webapps"
+        }
+        function redirecttogames() {
+            window.location.href = "games.html";
         }
     </script>
 </body>
