@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background: url(img/bg.webp);
+    background-color: #121212;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
