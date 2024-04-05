@@ -1,0 +1,43 @@
+* {
+    transition: 0.2s;
+}
+
+*::selection {
+    background: rgb(20, 104, 201);
+}
+
+.nav {
+    max-width: 800px;
+    width: auto;
+    padding: 9px 5px;
+    margin: 20px;
+    background: rgba(61, 61, 61, 0.2);
+    border-radius: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    align-content: center;
+}
+
+.nav-btn {
+    color: #fff;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    border-radius: 1000px;
+    background: rgba(23,119,231,1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a {
+    color: #2379db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
